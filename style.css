@@ -1,94 +1,203 @@
-/* General Styles */
+/* Reset */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #fdf6ec;
+  line-height: 1.6;
+  background: #fffaf0;
   color: #333;
 }
 
+/* Header */
 header {
-  background: #3a6b35;
-  color: white;
+  background: #f4c542;
+  color: #333;
   padding: 15px;
   text-align: center;
 }
-
-header h1 {
-  margin: 0;
-}
-
-nav {
-  margin-top: 10px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
+header nav a {
   margin: 0 15px;
+  text-decoration: none;
+  color: #333;
   font-weight: bold;
 }
-
-nav a.active, nav a:hover {
+header nav a:hover,
+header nav a.active {
+  color: #000;
   text-decoration: underline;
 }
 
-/* Contact Section */
-.contact-container {
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+/* Hero Section */
+.hero {
+  background: url('honey-bg.jpg') no-repeat center center/cover;
+  color: white;
   text-align: center;
+  padding: 100px 20px;
+}
+.hero .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ffbf00;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.hero .btn:hover {
+  background: #e6ac00;
 }
 
-.contact-info {
-  margin: 20px 0;
-  text-align: left;
+/* Highlights */
+.highlights {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+.highlights .card {
+  background: #fff3cd;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  min-width: 250px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  margin: 10px;
+}
+
+/* Content Sections */
+.content {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Products */
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.product {
+  width: 30%;
+  background: #fff3cd;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.product img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Contact Page */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+.contact-card {
+  background: #fff3cd;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.contact-card h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+.btn-location {
+  background: #ffbf00;
+  color: #333;
+}
+.btn-location:hover {
+  background: #e6ac00;
+}
+.btn-call {
+  background: #28a745;
+  color: white;
+}
+.btn-call:hover {
+  background: #218838;
+}
+.btn-whatsapp {
+  background: #25d366;
+  color: white;
+}
+.btn-whatsapp:hover {
+  background: #1da851;
+}
+.btn-email {
+  background: #007bff;
+  color: white;
+}
+.btn-email:hover {
+  background: #0056b3;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Contact Page */
+.contact-container {
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
 }
 
 .contact-info p {
   font-size: 18px;
-  margin: 12px 0;
+  margin: 15px 0;
 }
 
 .contact-info a {
-  color: #3a6b35;
   text-decoration: none;
-  font-weight: bold;
+  color: #333;
+  font-weight: 500;
 }
 
 .contact-info a:hover {
-  color: #d77a1f;
+  color: #e67e22;
 }
 
 .contact-info i {
   margin-right: 10px;
-  color: #d77a1f;
+  color: #e67e22;
 }
 
-/* Social Media */
+/* Social Media Links */
 .social-links {
   margin-top: 20px;
 }
 
 .social-links a {
-  font-size: 30px;
   margin: 0 15px;
-  color: #3a6b35;
-  transition: 0.3s;
+  font-size: 32px;
+  color: #333;
+  transition: color 0.3s;
 }
 
 .social-links a:hover {
-  color: #d77a1f;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 15px;
-  background: #3a6b35;
-  color: white;
-  margin-top: 40px;
+  color: #e67e22;
 }
