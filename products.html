@@ -3,43 +3,174 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ambadi BeeFarm - Products</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Our Products - Ambadi Beefarm</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>🐝 Ambadi BeeFarm</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="products.html">Products</a>
-      <a href="contact.html">Contact</a>
+    <nav class="navbar">
+      <div class="logo">Ambadi Beefarm</div>
+      <ul class="nav-links">
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="about.html"><i class="fas fa-leaf"></i> About</a></li>
+        <li><a href="products.html" class="active"><i class="fas fa-box"></i> Products</a></li>
+        <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+        <li><a href="https://wa.me/message/BQS7BK4UUMUEI1" target="_blank" class="booking-btn"><i class="fab fa-whatsapp"></i> Booking</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section class="content">
-    <h2>Our Products</h2>
-    <div class="product-list">
-      <div class="product">
-        <img src="honey-jar.jpg" alt="Pure Honey">
-        <h3>Pure Honey</h3>
-        <p>Natural & organic honey, available in 250g, 500g, and 1kg jars.</p>
+  <main>
+    <section class="products-section">
+      <h1>Our Products</h1>
+      <p>Pure. Natural. Farm-Fresh. 🍯</p>
+
+      <div class="products-container">
+
+        <!-- Processed Honey -->
+        <div class="product-card">
+          <i class="fas fa-jar"></i>
+          <h2>Processed Honey</h2>
+          <p>Smooth, Filtered & Long-Lasting! Perfect for your pantry.</p>
+          <ul>
+            <li>Filtered for clarity & consistency</li>
+            <li>Longer shelf life</li>
+            <li>Easy to use in cooking & baking</li>
+            <li>Retains essential nutrients</li>
+          </ul>
+          <p class="price">1kg – ₹400 | 500g – ₹200</p>
+        </div>
+
+        <!-- Raw Honey -->
+        <div class="product-card">
+          <i class="fas fa-seedling"></i>
+          <h2>Raw Honey</h2>
+          <p>Straight from the hive to your home! Raw. Natural. Unprocessed.</p>
+          <ul>
+            <li>Boosts Energy Naturally</li>
+            <li>Strengthens Immunity</li>
+            <li>Promotes Wound Healing</li>
+            <li>Aids Digestion & Weight Management</li>
+            <li>Soothes Sore Throats & Coughs</li>
+          </ul>
+          <p class="price">1kg – ₹400 | 500g – ₹200</p>
+        </div>
+
+        <!-- Stingless Bee Honey -->
+        <div class="product-card">
+          <i class="fas fa-tree"></i>
+          <h2>Stingless Bee Honey (Cheruthen)</h2>
+          <p>The Wild Forest Honey – Pure, Raw & Medicinal.</p>
+          <ul>
+            <li>Rich in natural enzymes & antioxidants</li>
+            <li>Effective for cough & cold</li>
+            <li>Aids healing & immunity</li>
+            <li>Supports respiratory health</li>
+            <li>Used in Ayurvedic remedies</li>
+          </ul>
+          <p class="price">₹1500 (500g)</p>
+        </div>
+
+        <!-- Comb Honey -->
+        <div class="product-card">
+          <i class="fas fa-honey-pot"></i>
+          <h2>Comb Honey</h2>
+          <p>Raw. Pure. Straight from the hive. Seasonal & premium quality.</p>
+          <ul>
+            <li>Boosts immunity & energy</li>
+            <li>Supports digestion & respiratory health</li>
+            <li>Natural enzymes & antioxidants</li>
+            <li>Chew raw, spread, or mix in tea</li>
+          </ul>
+          <p class="price">₹250 (1 box)</p>
+        </div>
+
+        <!-- Beeswax Moisturizer -->
+        <div class="product-card">
+          <i class="fas fa-spa"></i>
+          <h2>Beeswax Moisturizer</h2>
+          <p>Natural skin protection – handcrafted with love.</p>
+          <ul>
+            <li>Nourishes & hydrates skin</li>
+            <li>Protects against dryness</li>
+            <li>Anti-inflammatory & antibacterial</li>
+            <li>Gentle on sensitive skin</li>
+          </ul>
+          <p class="price">₹150 (50g)</p>
+        </div>
+
+        <!-- Amla Honey -->
+        <div class="product-card">
+          <i class="fas fa-apple-alt"></i>
+          <h2>Amla Honey</h2>
+          <p>A sweet boost of Vitamin C!</p>
+          <ul>
+            <li>Strengthens immunity & vision</li>
+            <li>Improves digestion & metabolism</li>
+            <li>Rich in antioxidants & iron</li>
+            <li>Supports hair & skin health</li>
+          </ul>
+          <p class="price">₹150 (250g)</p>
+        </div>
+
+        <!-- Ginger Honey -->
+        <div class="product-card">
+          <i class="fas fa-mortar-pestle"></i>
+          <h2>Ginger Honey</h2>
+          <p>Nature’s power duo for health & wellness.</p>
+          <ul>
+            <li>Soothes sore throat & cough</li>
+            <li>Boosts immunity</li>
+            <li>Relieves nausea & cold</li>
+          </ul>
+          <p class="price">₹250 (250g)</p>
+        </div>
+
+        <!-- Tulsi-Pepper Honey -->
+        <div class="product-card">
+          <i class="fas fa-leaf"></i>
+          <h2>Tulsi-Pepper Honey</h2>
+          <p>A herbal wellness blend for natural healing.</p>
+          <ul>
+            <li>Fights cold & cough</li>
+            <li>Boosts immunity</li>
+            <li>Soothes throat irritation</li>
+          </ul>
+          <p class="price">₹250 (250g)</p>
+        </div>
+
+        <!-- Turmeric Honey -->
+        <div class="product-card">
+          <i class="fas fa-star"></i>
+          <h2>Turmeric Honey</h2>
+          <p>Golden health in a jar – powerful antioxidant blend.</p>
+          <p class="price">₹250 (250g)</p>
+        </div>
+
+        <!-- Garlic Honey -->
+        <div class="product-card">
+          <i class="fas fa-bolt"></i>
+          <h2>Garlic Honey</h2>
+          <p>The immunity powerhouse – natural antibiotic & detox.</p>
+          <p class="price">₹250 (250g)</p>
+        </div>
+
+        <!-- Honey Soap -->
+        <div class="product-card">
+          <i class="fas fa-soap"></i>
+          <h2>Honey Soap</h2>
+          <p>Gentle care from nature – handmade with love.</p>
+          <p class="price">₹50 (100g)</p>
+        </div>
+
       </div>
-      <div class="product">
-        <img src="beeswax.jpg" alt="Beeswax">
-        <h3>Beeswax</h3>
-        <p>Raw beeswax for candles, creams, and natural crafts.</p>
-      </div>
-      <div class="product">
-        <img src="candle.jpg" alt="Beeswax Candles">
-        <h3>Beeswax Candles</h3>
-        <p>Handmade candles with a natural honey aroma.</p>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Ambadi BeeFarm. All rights reserved.</p>
+    <p>© 2025 Ambadi Beefarm | All Rights Reserved</p>
   </footer>
 </body>
 </html>
