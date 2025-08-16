@@ -3,6 +3,8 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  background: #fffaf0;
+  color: #333;
 }
 
 /* Header */
@@ -18,8 +20,10 @@ header nav a {
   color: #333;
   font-weight: bold;
 }
-header nav a:hover {
+header nav a:hover,
+header nav a.active {
   color: #000;
+  text-decoration: underline;
 }
 
 /* Hero Section */
@@ -47,20 +51,23 @@ header nav a:hover {
   display: flex;
   justify-content: space-around;
   padding: 40px 20px;
+  flex-wrap: wrap;
 }
 .highlights .card {
   background: #fff3cd;
   padding: 20px;
   border-radius: 10px;
   width: 30%;
+  min-width: 250px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  margin: 10px;
 }
 
 /* Content Sections */
 .content {
   padding: 40px 20px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -82,6 +89,64 @@ header nav a:hover {
 .product img {
   max-width: 100%;
   border-radius: 10px;
+}
+
+/* Contact Page */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+.contact-card {
+  background: #fff3cd;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.contact-card h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+.btn-location {
+  background: #ffbf00;
+  color: #333;
+}
+.btn-location:hover {
+  background: #e6ac00;
+}
+.btn-call {
+  background: #28a745;
+  color: white;
+}
+.btn-call:hover {
+  background: #218838;
+}
+.btn-whatsapp {
+  background: #25d366;
+  color: white;
+}
+.btn-whatsapp:hover {
+  background: #1da851;
+}
+.btn-email {
+  background: #007bff;
+  color: white;
+}
+.btn-email:hover {
+  background: #0056b3;
 }
 
 /* Footer */
