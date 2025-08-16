@@ -201,3 +201,52 @@ footer {
 .social-links a:hover {
   color: #e67e22;
 }
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f4a261;
+  padding: 15px 30px;
+  border-radius: 0 0 15px 15px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background: #e76f51;
+}
+
+/* Special Style for Booking Button */
+.booking-btn {
+  background: #25d366;
+  color: white !important;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 8px 15px;
+  transition: 0.3s;
+}
+
+.booking-btn:hover {
+  background: #128c7e;
+}
