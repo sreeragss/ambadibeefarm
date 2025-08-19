@@ -3,33 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ambadi BeeFarm - About Us</title>
+  <title>About Us - Ambadi Beefarm</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+  <!-- Navbar -->
   <header>
-    <h1>🐝 Ambadi BeeFarm</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="products.html">Products</a>
-      <a href="contact.html">Contact</a>
+    <nav class="navbar">
+      <div class="logo">Ambadi Beefarm</div>
+      <ul class="nav-links">
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="about.html" class="active"><i class="fas fa-leaf"></i> About</a></li>
+        <li><a href="products.html"><i class="fas fa-box"></i> Products</a></li>
+        <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+        <li><a href="https://wa.me/message/BQS7BK4UUMUEI1" target="_blank" class="booking-btn"><i class="fab fa-whatsapp"></i> Booking</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section class="content">
-    <h2>About Us</h2>
-    <p>
-      Ambadi BeeFarm is dedicated to bringing you natural, organic, and pure honey directly from our farm.  
-      With years of traditional beekeeping experience, we ensure the highest quality products that are healthy, eco-friendly, and sustainable.
-    </p>
-    <p>
-      Our mission is to promote healthy living while protecting bees and the environment. Every drop of honey we produce carries the richness of nature.
-    </p>
+  <!-- Hero Section -->
+  <section class="hero" style="background-image: url('images/bees-about.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>About Ambadi Beefarm</h1>
+      <p>Pure Honey, Sustainable Practices, Trusted Quality</p>
+    </div>
   </section>
 
+  <!-- About Section -->
+  <section class="about-home">
+    <div class="about-home-content">
+      <img src="images/beekeeping.jpg" alt="Beekeeping at Ambadi Beefarm">
+      <div class="about-text">
+        <h2>Our Journey</h2>
+        <p>Founded with love and passion for nature, Ambadi Beefarm has been dedicated to delivering 100% pure, natural honey and bee products directly from our hives to your home. Our practices are rooted in sustainability, ensuring that bees thrive while you enjoy the health benefits of their hard work.</p>
+        <p>We believe in authenticity, transparency, and community. Every drop of honey carries the tradition of ethical beekeeping and the promise of wellness for your family.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="features">
+    <h2>Our Commitment</h2>
+    <div class="features-container">
+      <div class="feature-card">
+        <i class="fas fa-leaf"></i>
+        <h3>Sustainability</h3>
+        <p>We care for our bees and the environment with eco-friendly practices.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-heart"></i>
+        <h3>Health & Wellness</h3>
+        <p>Our honey products are crafted to boost immunity and promote natural healing.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-handshake"></i>
+        <h3>Trust & Quality</h3>
+        <p>We deliver only authentic, chemical-free honey, trusted by our customers for years.</p>
+      </div>
+    </div>
+  </section>
+
+<!-- Meet the Beekeeper -->
+<section class="beekeeper">
+  <h2>Meet the Beekeeper</h2>
+  <div class="beekeeper-content">
+    <img src="images/owner.jpg" alt="Beekeeper - Ambadi Beefarm">
+    <div class="beekeeper-text">
+      <p>Hello! I’m <strong>[Your Name]</strong>, the proud beekeeper behind Ambadi Beefarm.  
+      What started as a small passion for bees and nature has grown into a mission to deliver pure, authentic honey straight from the hive to your home.</p>
+      <p>I personally care for each hive with love and dedication, ensuring that my bees are happy and healthy — because only then can I share the purest honey with you 🍯🐝.</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Ambadi BeeFarm. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://youtube.com/@ambadi_beefarm?si=Qfqb7KDL7BGYGZfF" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/ambadi_beefarm?igsh=dG9ya2h3ajZhMTFs&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/share/16g29sd6rM/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+    <p>© 2025 Ambadi Beefarm | All Rights Reserved</p>
   </footer>
 </body>
 </html>
