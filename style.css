@@ -343,29 +343,3 @@ footer {
 .social-links a:hover {
   color: #e76f51;
 }
-
-/* ===================== */
-/* Scroll Animations */
-/* ===================== */
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.fade-in.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.slide-up {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.slide-up.show {
-  opacity: 1;
-  transform: translateY(0);
-}
