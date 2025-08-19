@@ -3,54 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ambadi BeeFarm - Home</title>
+  <title>Ambadi Beefarm - Pure Honey & Natural Products</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Font Awesome for Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Navigation Bar -->
+  <!-- Navbar -->
   <header>
-    <h1>🐝 Ambadi BeeFarm</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="products.html">Products</a>
-      <a href="contact.html">Contact</a>
-
-      <!-- Booking Menu -->
-      <li><a href="https://wa.me/message/BQS7BK4UUMUEI1" target="_blank" class="booking-btn">
-        <i class="fab fa-whatsapp"></i> Booking
-      </a></li>
+    <nav class="navbar">
+      <div class="logo">Ambadi Beefarm</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="about.html"><i class="fas fa-leaf"></i> About</a></li>
+        <li><a href="products.html"><i class="fas fa-box"></i> Products</a></li>
+        <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+        <li><a href="https://wa.me/message/BQS7BK4UUMUEI1" target="_blank" class="booking-btn"><i class="fab fa-whatsapp"></i> Booking</a></li>
+      </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <h2>Pure Honey, Fresh from Nature 🍯</h2>
-    <p>Welcome to Ambadi BeeFarm – Natural, Organic, and 100% Pure Honey.</p>
-    <a href="products.html" class="btn">Explore Products</a>
+  <section class="hero" style="background-image: url('images/hero-honey.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Pure. Natural. Authentic.</h1>
+      <p>Straight from the Hive to Your Home</p>
+      <div class="hero-buttons">
+        <a href="products.html" class="btn-primary"><i class="fas fa-store"></i> Shop Now</a>
+        <a href="https://wa.me/message/BQS7BK4UUMUEI1" target="_blank" class="btn-secondary"><i class="fab fa-whatsapp"></i> Book on WhatsApp</a>
+      </div>
+    </div>
   </section>
 
   <!-- Highlights -->
-  <section class="highlights">
-    <div class="card">
-      <h3>🍯 Pure Honey</h3>
-      <p>Harvested naturally, without chemicals or preservatives.</p>
+  <section class="features">
+    <h2>Why Choose Ambadi Beefarm?</h2>
+    <div class="features-container">
+      <div class="feature-card">
+        <i class="fas fa-seedling"></i>
+        <h3>100% Natural</h3>
+        <p>No sugar, no preservatives – just pure honey.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-heart"></i>
+        <h3>Health Benefits</h3>
+        <p>Boost immunity, improve digestion & gain natural energy.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-award"></i>
+        <h3>Trusted Quality</h3>
+        <p>Authentic farm-fresh honey with traditional values.</p>
+      </div>
     </div>
-    <div class="card">
-      <h3>🐝 Beeswax Products</h3>
-      <p>Handmade candles, creams, and more from pure beeswax.</p>
+  </section>
+
+  <!-- Best Sellers -->
+  <section class="best-sellers">
+    <h2>Our Best Sellers</h2>
+    <div class="products-container">
+      <div class="product-card">
+        <img src="images/raw-honey.jpg" alt="Raw Honey">
+        <h2>Raw Honey</h2>
+        <p>Unprocessed & natural – straight from the hive.</p>
+        <span class="price">1kg – ₹400 | 500g – ₹200</span>
+        <a href="https://wa.me/message/BQS7BK4UUMUEI1" target="_blank" class="buy-btn"><i class="fab fa-whatsapp"></i> Buy Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="images/stingless-bee-honey.jpg" alt="Stingless Bee Honey">
+        <h2>Stingless Bee Honey</h2>
+        <p>Rare forest honey – rich in antioxidants.</p>
+        <span class="price">₹1500 (500g)</span>
+        <a href="https://wa.me/message/BQS7BK4UUMUEI1" target="_blank" class="buy-btn"><i class="fab fa-whatsapp"></i> Buy Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="images/comb-honey.jpg" alt="Comb Honey">
+        <h2>Comb Honey</h2>
+        <p>Raw & pure honeycomb – nature’s sweetest superfood.</p>
+        <span class="price">₹250 (1 box)</span>
+        <a href="https://wa.me/message/BQS7BK4UUMUEI1" target="_blank" class="buy-btn"><i class="fab fa-whatsapp"></i> Buy Now</a>
+      </div>
     </div>
-    <div class="card">
-      <h3>🌿 Eco-Friendly</h3>
-      <p>Sustainably produced, supporting nature and farmers.</p>
+  </section>
+
+  <!-- About Block -->
+  <section class="about-home">
+    <div class="about-home-content">
+      <img src="images/beekeeping.jpg" alt="Beekeeping">
+      <div class="about-text">
+        <h2>Our Story</h2>
+        <p>At Ambadi Beefarm, we bring you honey and bee products made with love, care, and tradition. We follow sustainable beekeeping practices to ensure purity, authenticity, and wellness in every drop of honey.</p>
+        <a href="about.html" class="btn-primary">Learn More</a>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Ambadi BeeFarm. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://youtube.com/@ambadi_beefarm?si=Qfqb7KDL7BGYGZfF" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/ambadi_beefarm?igsh=dG9ya2h3ajZhMTFs&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/share/16g29sd6rM/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+    <p>© 2025 Ambadi Beefarm | All Rights Reserved</p>
   </footer>
 </body>
 </html>
