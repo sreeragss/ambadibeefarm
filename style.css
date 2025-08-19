@@ -475,7 +475,7 @@ footer {
 .logo {
   font-size: 2rem;              /* Bigger text */
   font-weight: 800;             /* Extra bold */
-  color: #ffb703;               /* Honey yellow */
+  color: #000000;               /* Honey black */
   text-transform: uppercase;    /* All caps for branding */
   letter-spacing: 2px;          /* Spaced out for elegance */
   font-family: 'Poppins', sans-serif;
@@ -487,3 +487,4 @@ footer {
   color: #e76f51;              /* Reddish honey shade on hover */
   transform: scale(1.1);       /* Slight zoom */
 }
+
