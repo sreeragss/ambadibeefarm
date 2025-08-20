@@ -7,6 +7,35 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAERIpbGE3XI3X6k2xQsvJKn0MkhuTqSkc&libraries=places"></script>
+<script>
+  function initReviews() {
+    const service = new google.maps.places.PlacesService(document.createElement('div'));
+
+    service.getDetails({
+      placeId: "ChIJv7riSufnBTsRZhsLpE-y4Vw",  // Replace with your Place ID
+      fields: ['name', 'rating', 'reviews']
+    }, (place, status) => {
+      if (status === google.maps.places.PlacesServiceStatus.OK) {
+        let reviewsHTML = "";
+        place.reviews.forEach(r => {
+          reviewsHTML += `
+            <div class="review-card">
+              <p class="review-text">"${r.text}"</p>
+              <p class="review-author">– ${r.author_name} ⭐ ${r.rating}</p>
+            </div>
+          `;
+        });
+        document.getElementById("reviews-list").innerHTML = reviewsHTML;
+      }
+    });
+  }
+
+  window.onload = initReviews;
+</script>
+  
+  
 <body>
   <!-- Navbar -->
   <header>
@@ -134,5 +163,6 @@
   </footer>
 </body>
 </html>
+
 
 
