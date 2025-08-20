@@ -196,49 +196,45 @@ header nav a.active {
   color: #444;
 }
 
-/* Reviews & Map Section */
+/* Google Reviews */
 .reviews {
-  background: #fffbee; /* honey shade */
+  background: #fffbee;
   padding: 60px 20px;
   text-align: center;
 }
 
 .reviews h2 {
   font-size: 2.4rem;
-  font-weight: 800;
-  color: #ffb703; /* honey yellow */
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-.reviews p {
-  font-size: 1.2rem;
-  color: #333;
+  font-weight: bold;
+  color: #ffb703;
   margin-bottom: 30px;
 }
 
 .reviews-container {
   max-width: 900px;
-  margin: 0 auto;
+  margin: auto;
 }
 
-.review-btn {
-  margin-top: 20px;
+.review-card {
+  background: #fff;
+  border: 1px solid #f1c40f;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left;
 }
 
-.review-btn .btn {
-  background: #ffb703;
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 8px;
-  text-decoration: none;
+.review-text {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.review-author {
+  font-size: 0.95rem;
   font-weight: bold;
-  transition: background 0.3s ease, transform 0.2s;
-}
-
-.review-btn .btn:hover {
-  background: #e76f51;
-  transform: scale(1.05);
+  color: #555;
 }
 
 
@@ -509,5 +505,6 @@ footer {
   color: #e76f51;              /* Reddish honey shade on hover */
   transform: scale(1.1);       /* Slight zoom */
 }
+
 
 
