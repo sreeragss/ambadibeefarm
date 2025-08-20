@@ -196,27 +196,49 @@ header nav a.active {
   color: #444;
 }
 
-/* =============================
-   GOOGLE REVIEWS WIDGET
-============================= */
-.reviews-widget {
+/* Reviews & Map Section */
+.reviews {
+  background: #fffbee; /* honey shade */
   padding: 60px 20px;
   text-align: center;
 }
 
-.reviews-widget h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-  color: #d48806;
+.reviews h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #ffb703; /* honey yellow */
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
-.reviews-widget iframe {
-  width: 100%;
+.reviews p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.reviews-container {
   max-width: 900px;
-  height: 500px;
-  border: none;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin: 0 auto;
+}
+
+.review-btn {
+  margin-top: 20px;
+}
+
+.review-btn .btn {
+  background: #ffb703;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.review-btn .btn:hover {
+  background: #e76f51;
+  transform: scale(1.05);
 }
 
 
@@ -487,4 +509,5 @@ footer {
   color: #e76f51;              /* Reddish honey shade on hover */
   transform: scale(1.1);       /* Slight zoom */
 }
+
 
