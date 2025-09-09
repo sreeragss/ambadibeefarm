@@ -237,58 +237,96 @@ header nav a.active {
   color: #555;
 }
 
+/* ================== */
 /* Updates / Blog Section */
+/* ================== */
 .updates {
-  background: #fdf6e3;
-  padding: 60px 20px;
+  background: linear-gradient(to bottom, #fffbee, #fdf6e3);
+  padding: 70px 20px;
   text-align: center;
 }
 
 .updates h2 {
-  font-size: 2.4rem;
-  font-weight: bold;
+  font-size: 2.6rem;
+  font-weight: 900;
   color: #ffb703;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .updates-container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 
 .update-card {
+  position: relative;
   background: #fff;
-  border-left: 6px solid #ffb703;
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: 15px;
+  padding: 25px;
   text-align: left;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 8px solid #ffb703;
 }
 
 .update-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 .update-card h3 {
   margin-bottom: 10px;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #e76f51;
 }
 
 .update-card p {
-  font-size: 1rem;
-  margin-bottom: 8px;
+  font-size: 1.05rem;
+  margin-bottom: 10px;
   color: #444;
+  line-height: 1.5;
 }
 
 .update-card .date {
   font-size: 0.9rem;
   color: #777;
 }
+
+/* Highlight Badge */
+.badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.badge.offer {
+  background: linear-gradient(45deg, #ffb703, #f77f00);
+}
+
+.badge.new {
+  background: linear-gradient(45deg, #2a9d8f, #219ebc);
+}
+
+.badge.info {
+  background: linear-gradient(45deg, #e76f51, #d62828);
+}
+
+/* Highlighted Card */
+.update-card.highlight {
+  background: linear-gradient(135deg, #fff7d6, #fff);
+  border-left: 8px solid #f77f00;
+}
+
 
 
 /* =============================
@@ -558,6 +596,7 @@ footer {
   color: #e76f51;              /* Reddish honey shade on hover */
   transform: scale(1.1);       /* Slight zoom */
 }
+
 
 
 
